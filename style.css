@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+* body {
+  background-image: url("images/bg-intro-mobile.png");
+  background-color: #ff7a7a;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+* body #banner {
+  color: white;
+}
+
+* body #banner h1 {
+  font-weight: 700;
+}
+
+* body #banner p {
+  font-weight: 400;
+}
+
+* body #sCard {
+  background-color: #6055a5;
+  color: white;
+}
+
+* body #sCard h2 {
+  font-weight: 500;
+}
+
+* body #sCard p {
+  font-weight: 400;
+}
+
+* body #bCard {
+  background-color: white;
+  /* Internet Explorer 10-11 */
+  -ms-input-placeholder-color: #3e3c49;
+  -ms-input-placeholder-font-weight: 500;
+}
+
+* body #bCard ::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #3e3c49;
+  font-weight: 500;
+  opacity: 1;
+  /* Firefox */
+}
+
+* body #bCard :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #3e3c49;
+  font-weight: 500;
+  opacity: 1;
+  /* Firefox */
+}
+
+* body #bCard ::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #3e3c49;
+  font-weight: 500;
+  opacity: 1;
+  /* Firefox */
+}
+
+* body #bCard ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #3e3c49;
+  font-weight: 500;
+  opacity: 1;
+  /* Firefox */
+}
+
+* body #bCard ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #3e3c49;
+  font-weight: 500;
+}
+
+* body #bCard .entry {
+  display: block;
+}
+
+* body #bCard .invalid {
+  display: block;
+}
+
+* body #bCard .button {
+  background-color: #38cc8c;
+  color: #b9b6d3;
+  text-transform: uppercase;
+}
+
+* body #bCard #disclaimer {
+  display: block;
+}
+
+* body #bCard #disclaimer p {
+  font-weight: 400;
+  color: #b9b6d3;
+}
+
+* body #bCard #disclaimer a {
+  font-weight: 500;
+  color: #ff7a7a;
+  text-decoration: none;
+}
+
+* body .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+* body .attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */

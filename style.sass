@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+//colors
+
+//primary
+$red: hsl(0, 100%, 74%)
+$green: hsl(154, 59%, 51%)
+//accent
+$blue: hsl(248, 32%, 49%)
+//neutral
+$d-blue: hsl(249, 10%, 26%)
+$g-blue: hsl(246, 25%, 77%)
+
+//font size and weights
+$f-size: 16px
+$fontA: 400
+$fontB: 500
+$fontC: 600
+$fontD: 700
+$f-fam: 'Poppins', sans-serif
+
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+    border: 0
+
+    body
+        background-image: url("images/bg-intro-mobile.png")
+        background-color: $red
+        font-size: $f-size
+        font-family: $f-fam
+
+        #banner
+            color: white
+            h1
+                font-weight: $fontD
+            p
+                font-weight: $fontA
+
+        #sCard
+            background-color: $blue
+            color: white
+            h2
+                font-weight: $fontB
+            p
+                font-weight: $fontA
+
+        #bCard
+            background-color: white
+            ::placeholder
+                /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: $d-blue
+                font-weight: $fontB
+                opacity: 1
+                /* Firefox */
+            :-ms-input-placeholder
+                /* Internet Explorer 10-11 */
+                color: $d-blue
+                font-weight: $fontB
+            ::-ms-input-placeholder
+                /* Microsoft Edge */
+                color: $d-blue
+                font-weight: $fontB
+
+            .entry
+                display: block
+            .invalid
+                display: block
+            .button
+                background-color: $green
+                color: $g-blue
+                text-transform: uppercase
+            #disclaimer
+                display: block
+                p
+                    font-weight: $fontA
+                    color: $g-blue
+                a
+                    font-weight: $fontB
+                    color: $red
+                    text-decoration: none
+
+    
+        .attribution
+            font-size: 11px
+            text-align: center
+            
+            a
+                color: hsl(228, 45%, 44%)
