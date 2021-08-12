@@ -39,14 +39,17 @@
 * body #sCard {
   background-color: #6055a5;
   color: white;
-}
-
-* body #sCard h2 {
-  font-weight: 500;
-}
-
-* body #sCard p {
+  width: 17.5rem;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 10px;
   font-weight: 400;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+* body #sCard b {
+  font-weight: 500;
+  font-size: 0.9rem;
 }
 
 * body #bCard {
