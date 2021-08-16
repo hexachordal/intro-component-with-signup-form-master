@@ -136,10 +136,6 @@
   background-position: 95% center;
 }
 
-* body #bCard .error {
-  display: block;
-}
-
 * body #bCard .entry {
   width: 100%;
   height: 3rem;
@@ -148,7 +144,11 @@
 }
 
 * body #bCard .invalid {
-  display: block;
+  font-size: 0.5rem;
+  padding-top: 0.3rem;
+  padding-bottom: 1rem;
+  text-align: right;
+  color: #ff7a7a;
 }
 
 * body #bCard .button {
@@ -175,6 +175,7 @@
 * body .attribution {
   font-size: 11px;
   text-align: center;
+  color: white;
 }
 
 * body .attribution a {
