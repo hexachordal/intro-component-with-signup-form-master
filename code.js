@@ -4,18 +4,33 @@ console.clear();
 let formItem = document.getElementsByClassName('form-item');
 let button = document.getElementsByClassName('button');
 let invalid = document.getElementsByClassName('invalid');
+let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-    formItem[0].onkeypress= function typing(){
+    formItem[0].onchange= function valid(){
         if(invalid[0].style.color === "rgb(255, 122, 122)"){
             invalid[0].style.color = "white";
             formItem[0].style.backgroundImage = "none"
         }
     }
 
-    formItem[1].onkeypress= function typing(){
+    formItem[1].onchange= function valid(){
         if(invalid[1].style.color === "rgb(255, 122, 122)"){
             invalid[1].style.color = "white";
             formItem[1].style.backgroundImage = "none"
+        }
+    }
+
+    formItem[2].onchange= function valid(){
+        if(invalid[2].style.color === "rgb(255, 122, 122)"){
+            invalid[2].style.color = "white";
+            formItem[2].style.backgroundImage = "none"
+        }
+    }
+
+    formItem[3].onchange= function valid(){
+        if(invalid[3].style.color === "rgb(255, 122, 122)"){
+            invalid[3].style.color = "white";
+            formItem[3].style.backgroundImage = "none"
         }
     }
 
@@ -28,6 +43,16 @@ let invalid = document.getElementsByClassName('invalid');
         if(formItem[1].value === ""){
             invalid[1].style.color = "rgb(255, 122, 122)";
             formItem[1].style.backgroundImage = `url("images/icon-error.svg")`;
+        }
+
+        if(regex.test(formItem[2].value)=== false){
+            invalid[2].style.color = "rgb(255, 122, 122)";
+            formItem[2].style.backgroundImage = `url("images/icon-error.svg")`;
+        } 
+
+        if(formItem[3].value === ""){
+            invalid[3].style.color = "rgb(255, 122, 122)";
+            formItem[3].style.backgroundImage = `url("images/icon-error.svg")`;
         }
 
     }
