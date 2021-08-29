@@ -69,6 +69,9 @@
 * body #bCard .form-item {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: 95% center;
 }
 
 * body #bCard .form-btn-style {
@@ -84,7 +87,7 @@
   padding-top: 0.3rem;
   padding-bottom: 1rem;
   text-align: right;
-  color: #ff7a7a;
+  color: white;
 }
 
 * body #bCard .button {
