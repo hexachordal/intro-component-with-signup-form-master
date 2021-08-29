@@ -1,4 +1,6 @@
 console.clear();
+
+/*
 let valid = document.getElementsByClassName('valid');
 
 for(let x= 0; x < valid.length; x++){
@@ -6,4 +8,5 @@ for(let x= 0; x < valid.length; x++){
         valid[x].placeholder = "";
     }
 }
+*/
 
