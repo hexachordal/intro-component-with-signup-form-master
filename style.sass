@@ -19,119 +19,254 @@ $fontC: 600
 $fontD: 700
 $f-fam: 'Poppins', sans-serif
 
-*
-    box-sizing: border-box
-    padding: 0
-    margin: 0
-    border: 0
-
-    body
-        display: grid
-        place-items: center
-        background-image: url("images/bg-intro-mobile.png")
-        background-color: $red
-        font-size: $f-size
-        font-family: $f-fam
-
-        #banner
-            color: white
-            width: 23.5rem
-            text-align: center
-            padding: 6rem 1.5rem 3rem 1.5rem
-            h1
-                font-weight: $fontC
-                font-size: 1.7rem
-                padding-bottom: 1rem
-            p
-                font-weight: $fontA
-                font-size: 1rem
-                line-height: 1.7rem
-
-        #sCard
-            background-color: $blue
-            color: white
-            width: 20.5rem
-            cursor: pointer
-            padding: 1rem 4rem 1rem 4rem
-            border-radius: 10px
-            font-weight: $fontA
-            font-size: 0.9rem
-            text-align: center
-            box-shadow: 0px 6px 0px 0px #00000047
-            b
-                font-weight: $fontB
-                font-size: 0.9rem
-
-        #bCard
-            background-color: white
-            width: 20.5rem
-            margin-top: 2rem
-            margin-bottom: 2rem
-            padding: 2rem 1.5rem 1rem 1.5rem
-            border-radius: 10px
-            box-shadow: 0px 6px 0px 0px #00000047
-            
-
+@media screen and (max-width: 1023px)
     
-            .form-item
-                box-sizing: border-box
-                background-image: none
-                background-repeat: no-repeat
-                background-position: 95% center
-                padding: 0.8rem
-                color: $d-blue
-                font-weight: $fontC
-                opacity: 1
-                font-family: $f-fam
-                
 
-            .form-btn-style
-                width: 100%
-                height: 3rem
-                border: 1px solid $g-blue
-                border-radius: 4px
-                
+    *
+        box-sizing: border-box
+        padding: 0
+        margin: 0
+        border: 0
 
-            .invalid
-                font-size: 0.5rem
-                padding-top: 0.3rem
-                padding-bottom: 1rem
-                text-align: right
+        body
+            display: grid
+            place-items: center
+            background-image: url("images/bg-intro-mobile.png")
+            background-color: $red
+            font-size: $f-size
+            font-family: $f-fam
+
+            #banner
                 color: white
-                
-            .button
-                background-color: $green
-                color: rgb(210, 255, 242)
-                cursor: pointer
-                text-transform: uppercase
-                padding: 0.3rem
-
-                &:hover
-                    background-color: #38cc8ca6
-
-                &:active
-                    color: #38cc8ca6
-                    background-color: rgb(210, 255, 242)
-
-            #disclaimer
-                display: block
-                padding: 0.5rem 1.8rem 0rem 1.8rem
-                font-size: 0.65rem
-                line-height: 1.2rem
+                width: 23.5rem
                 text-align: center
+                padding: 6rem 1.5rem 3rem 1.5rem
+                h1
+                    font-weight: $fontC
+                    font-size: 1.7rem
+                    padding-bottom: 1rem
                 p
                     font-weight: $fontA
-                    color: $g-blue
-                a
+                    font-size: 1rem
+                    line-height: 1.7rem
+
+            #sCard
+                background-color: $blue
+                color: white
+                width: 20.5rem
+                cursor: pointer
+                padding: 1rem 4rem 1rem 4rem
+                border-radius: 10px
+                font-weight: $fontA
+                font-size: 0.9rem
+                text-align: center
+                box-shadow: 0px 6px 0px 0px #00000047
+                b
                     font-weight: $fontB
-                    color: $red
-                    text-decoration: none
+                    font-size: 0.9rem
 
-        .attribution
-            font-size: 11px
-            text-align: center
-            color: white
-            padding: 0.5rem
+            #bCard
+                background-color: white
+                width: 20.5rem
+                margin-top: 2rem
+                margin-bottom: 2rem
+                padding: 2rem 1.5rem 1rem 1.5rem
+                border-radius: 10px
+                box-shadow: 0px 6px 0px 0px #00000047
+                
 
-            a
-                color: hsl(228, 45%, 44%)
+        
+                .form-item
+                    box-sizing: border-box
+                    background-image: none
+                    background-repeat: no-repeat
+                    background-position: 95% center
+                    padding: 0.8rem
+                    color: $d-blue
+                    font-weight: $fontC
+                    opacity: 1
+                    font-family: $f-fam
+                    
+
+                .form-btn-style
+                    width: 100%
+                    height: 3rem
+                    border: 1px solid $g-blue
+                    border-radius: 4px
+                    
+
+                .invalid
+                    font-size: 0.5rem
+                    padding-top: 0.3rem
+                    padding-bottom: 1rem
+                    text-align: right
+                    color: white
+                    
+                .button
+                    background-color: $green
+                    color: rgb(210, 255, 242)
+                    cursor: pointer
+                    text-transform: uppercase
+                    padding: 0.3rem
+
+                    &:hover
+                        background-color: #38cc8ca6
+
+                    &:active
+                        color: #38cc8ca6
+                        background-color: rgb(210, 255, 242)
+
+                #disclaimer
+                    display: block
+                    padding: 0.5rem 1.8rem 0rem 1.8rem
+                    font-size: 0.65rem
+                    line-height: 1.2rem
+                    text-align: center
+                    p
+                        font-weight: $fontA
+                        color: $g-blue
+                    a
+                        font-weight: $fontB
+                        color: $red
+                        text-decoration: none
+
+            .attribution
+                font-size: 11px
+                text-align: center
+                color: white
+                padding: 0.5rem
+
+                a
+                    color: hsl(228, 45%, 44%)
+
+@media screen and (min-width: 1024px)
+    
+
+    *
+        box-sizing: border-box
+        padding: 0
+        margin: 0
+        border: 0
+
+        body
+            display: grid
+            grid-template-columns: 1fr 9fr 9fr 1fr
+            grid-template-rows: 2fr 1fr 14fr 1fr
+            justify-items: stretch
+            background-image: url("images/bg-intro-mobile.png")
+            background-color: $red
+            font-size: $f-size
+            font-family: $f-fam
+
+            #banner
+                color: white
+                grid-column: 2 / 3
+                grid-row: 2 / 4
+                width: auto
+                text-align: center
+                padding: 6rem 1.5rem 3rem 1.5rem
+                h1
+                    font-weight: $fontC
+                    font-size: 1.7rem
+                    padding-bottom: 1rem
+                p
+                    font-weight: $fontA
+                    font-size: 1rem
+                    line-height: 1.7rem
+
+            #sCard
+                background-color: $blue
+                color: white
+                grid-column: 3 / 4
+                grid-row: 2 / 3
+                width: auto
+                cursor: pointer
+                padding: 1rem 4rem 1rem 4rem
+                border-radius: 10px
+                font-weight: $fontA
+                font-size: 0.9rem
+                text-align: center
+                box-shadow: 0px 6px 0px 0px #00000047
+                b
+                    font-weight: $fontB
+                    font-size: 0.9rem
+
+            #bCard
+                background-color: white
+                grid-column: 3 / 4
+                grid-row: 3 / 4
+                width: auto
+                margin-top: 2rem
+                margin-bottom: 2rem
+                padding: 2rem 1.5rem 1rem 1.5rem
+                border-radius: 10px
+                box-shadow: 0px 6px 0px 0px #00000047
+                
+
+        
+                .form-item
+                    box-sizing: border-box
+                    background-image: none
+                    background-repeat: no-repeat
+                    background-position: 95% center
+                    padding: 0.8rem
+                    color: $d-blue
+                    font-weight: $fontC
+                    opacity: 1
+                    font-family: $f-fam
+                    
+
+                .form-btn-style
+                    width: 100%
+                    height: 3rem
+                    border: 1px solid $g-blue
+                    border-radius: 4px
+                    
+
+                .invalid
+                    font-size: 0.5rem
+                    padding-top: 0.3rem
+                    padding-bottom: 1rem
+                    text-align: right
+                    color: white
+                    
+                .button
+                    background-color: $green
+                    color: rgb(210, 255, 242)
+                    cursor: pointer
+                    text-transform: uppercase
+                    padding: 0.3rem
+
+                    &:hover
+                        background-color: #38cc8ca6
+
+                    &:active
+                        color: #38cc8ca6
+                        background-color: rgb(210, 255, 242)
+
+                #disclaimer
+                    display: block
+                    padding: 0.5rem 1.8rem 0rem 1.8rem
+                    font-size: 0.65rem
+                    line-height: 1.2rem
+                    text-align: center
+                    p
+                        font-weight: $fontA
+                        color: $g-blue
+                    a
+                        font-weight: $fontB
+                        color: $red
+                        text-decoration: none
+
+            .attribution
+                display: grid
+                place-items: center
+                grid-row: 4 / 5
+                grid-column: 2 / 4
+                font-size: 11px
+                text-align: center
+                color: white
+                padding: 0.5rem
+
+                a
+                    color: hsl(228, 45%, 44%)
