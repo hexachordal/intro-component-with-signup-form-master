@@ -141,12 +141,16 @@
     -ms-grid-rows: 2fr 1fr 14fr 1fr;
         grid-template-rows: 2fr 1fr 14fr 1fr;
     justify-items: stretch;
-    background-image: url("images/bg-intro-mobile.png");
+    background-image: url("images/bg-intro-desktop.png");
     background-color: #ff7a7a;
     font-size: 16px;
     font-family: "Poppins", sans-serif;
   }
   * body #banner {
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-line-pack: center;
+        align-content: center;
     color: white;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
@@ -155,18 +159,22 @@
     -ms-grid-row-span: 2;
     grid-row: 2 / 4;
     width: auto;
+    height: 40.4em;
     text-align: center;
-    padding: 6rem 1.5rem 3rem 1.5rem;
+    padding: 0rem 1.5rem 3rem 1.5rem;
   }
   * body #banner h1 {
     font-weight: 600;
-    font-size: 1.7rem;
+    font-size: 3em;
     padding-bottom: 1rem;
+    line-height: 1.1em;
+    text-align: left;
   }
   * body #banner p {
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.7rem;
+    text-align: left;
   }
   * body #sCard {
     background-color: #6055a5;
@@ -192,6 +200,9 @@
     font-size: 0.9rem;
   }
   * body #bCard {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
     background-color: white;
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
@@ -200,6 +211,7 @@
     -ms-grid-row-span: 1;
     grid-row: 3 / 4;
     width: auto;
+    height: 35em;
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding: 2rem 1.5rem 1rem 1.5rem;
@@ -220,14 +232,15 @@
     font-family: "Poppins", sans-serif;
   }
   * body #bCard .form-btn-style {
-    width: 100%;
+    width: 90%;
     height: 3rem;
     border: 1px solid #b9b6d3;
     border-radius: 4px;
   }
   * body #bCard .invalid {
-    font-size: 0.5rem;
-    padding-top: 0.3rem;
+    font-size: 0.6em;
+    width: 90%;
+    padding-top: 0;
     padding-bottom: 1rem;
     text-align: right;
     color: white;

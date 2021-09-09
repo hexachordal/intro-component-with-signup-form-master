@@ -153,26 +153,32 @@ $f-fam: 'Poppins', sans-serif
             grid-template-columns: 1fr 9fr 9fr 1fr
             grid-template-rows: 2fr 1fr 14fr 1fr
             justify-items: stretch
-            background-image: url("images/bg-intro-mobile.png")
+            background-image: url("images/bg-intro-desktop.png")
             background-color: $red
             font-size: $f-size
             font-family: $f-fam
 
             #banner
+                display: grid
+                align-content: center
                 color: white
                 grid-column: 2 / 3
                 grid-row: 2 / 4
                 width: auto
+                height: 40.4em
                 text-align: center
-                padding: 6rem 1.5rem 3rem 1.5rem
+                padding: 0rem 1.5rem 3rem 1.5rem
                 h1
                     font-weight: $fontC
-                    font-size: 1.7rem
+                    font-size: 3em
                     padding-bottom: 1rem
+                    line-height: 1.1em
+                    text-align: left
                 p
                     font-weight: $fontA
                     font-size: 1rem
                     line-height: 1.7rem
+                    text-align: left
 
             #sCard
                 background-color: $blue
@@ -192,10 +198,13 @@ $f-fam: 'Poppins', sans-serif
                     font-size: 0.9rem
 
             #bCard
+                display: grid
+                place-items: center
                 background-color: white
                 grid-column: 3 / 4
                 grid-row: 3 / 4
                 width: auto
+                height: 35em
                 margin-top: 2rem
                 margin-bottom: 2rem
                 padding: 2rem 1.5rem 1rem 1.5rem
@@ -217,15 +226,16 @@ $f-fam: 'Poppins', sans-serif
                     
 
                 .form-btn-style
-                    width: 100%
+                    width: 90%
                     height: 3rem
                     border: 1px solid $g-blue
                     border-radius: 4px
                     
 
                 .invalid
-                    font-size: 0.5rem
-                    padding-top: 0.3rem
+                    font-size: 0.6em
+                    width: 90%
+                    padding-top: 0
                     padding-bottom: 1rem
                     text-align: right
                     color: white
